@@ -47,7 +47,10 @@ var namesAndHobbies = {
     tim: "sailing"
 }
 
-
+for (prop in namesAndHobbies) {
+	// statement
+	console.log(`${namesAndHobbies[prop]} => ${prop}`)
+}
 console.log(namesAndHobbies.elie, "=>", 'elie')
 console.log(namesAndHobbies.matt, "=>",  "matt")
 console.log(namesAndHobbies.janey, "=>",  "janey")
