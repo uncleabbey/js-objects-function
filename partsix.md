@@ -1,6 +1,6 @@
-#### Part 6
+# Part 6
 
-a.	What does the following code output? Why?
+### a.	What does the following code output? Why?
 ```
 var firstName = 'Elie';
 
@@ -11,13 +11,13 @@ function displayFirstName(){
 
 displayFirstName(); // ?
 ```
-#### Answer:
+**Answer**:
 
 Tim Because firstName variable was assigned the in the function scope
 
 
 
-b.	What does the following code output? Why?
+### b.	What does the following code output? Why?
 
 ```
 function displayFirstName(){
@@ -29,30 +29,30 @@ displayFirstName();
 
 console.log(firstName) // ?
 ```
-#### Answer:
+**Answer**:
 undefined because it was defined within function scope
 
 
-c.	What does the following code output? Why?
+### c.	What does the following code output? Why?
 ```
 console.log(firstName) // ?
 var firstName = "Elie"
 
 ```
-#### Answer: 
+**Answer**: 
 
 Undefined because it was called before it was assigned
 
-d.	What does the following code output? Why?
+### d.	What does the following code output? Why?
 ```
 console.log(firstName) // ?
 firstName = 'Elie'
 ```
-#### Answer: 
+**Answer**: 
 
 Undefined because it was called before it was assigned
 
-e.	What does the following code output? Why?
+### e.	What does the following code output? Why?
 ```
 function sayHi(){
     return 'Hi ' + firstName;
@@ -62,12 +62,12 @@ function sayHi(){
 sayHi(); // ?
 ```
 
-#### Answer:
+**Answer**:
 Hi undefined
 
 Undefined because it was called before it was assigned
 
-f.	What does the following code output? Why?
+### f.	What does the following code output? Why?
 ```
 function sayHi(){
     return 'Hi ' + firstName; 
@@ -77,12 +77,12 @@ function sayHi(){
 sayHi(); // ?
 ```
 
-#### Answer:
+**Answer**:
 Hi Ellie
 
 Because it is a global variable
 
-g.	What does the following code output? Why?
+### g.	What does the following code output? Why?
 ```
 sayHi() // ?
 
@@ -90,13 +90,13 @@ function sayHi(){
     return 'Hi!';
 }
 ```
-#### Answer:
+**Answer**:
 
 Hi 
 
 because function can be called before being instanciated
 
-h.	What does the following code output? Why?
+### h.	What does the following code output? Why?
 
 ```
 sayHi() // ?
@@ -105,6 +105,6 @@ var sayHi = function(){
     return 'Hi!';
 }
 ```
-#### Answer:
+**Answer**:
 
 Error Because it assigned to a variable
